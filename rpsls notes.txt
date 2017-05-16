@@ -1,0 +1,14 @@
+#Scissors cuts paper
+#Paper covers rock
+#Rock crushes lizard
+#Lizard poisons Spock
+#Spock smashes scissors
+#Scissors decapitates lizard
+#Lizard eats paper
+#Paper disproves Spock
+#Spock vaporizes rock
+#Rock crushes scissors
+-------------------------------------------------
+if it is 0 then its a tie
+if its is 1 or 2  then player wins
+it it is 3 or 4 then computer wins

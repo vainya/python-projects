@@ -1,0 +1,14 @@
+declare wumpus types and assign initial value
+create a year counter
+
+make a loop that will stop at some point:  (hint: a while loop is the easiest)
+    add the births to both types
+    subtract the deaths of both types
+    increment the year counter
+    print all variables so you can see what is happening inside the loop
+
+after loop finishes print result to screen
+
+while(slow_wumpus > fast_wumpus)
+
+2000 *0.6 same as 2000 * 0.4 -2000

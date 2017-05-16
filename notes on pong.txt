@@ -1,0 +1,16 @@
+ctrl + k + highlight to block comment 
+shift +control + k + highlight to unblock comments
+
+if ball_pos[1] in range(paddle2_pos,paddle2_pos + PAD_HEIGHT + BALL_RADIUS):
+            ball_vel[0] = 1.1*-ball_vel[0]
+        else:
+            score2 += 1
+            right = False
+            ball_init(right)
+    if ball_pos[0] + BALL_RADIUS > WIDTH - PAD_WIDTH:
+        if ball_pos[1] in range(paddle1_pos,paddle1_pos + PAD_HEIGHT + BALL_RADIUS):
+            ball_vel[0] = 1.1*-ball_vel[0]
+        else:
+            score1 += 1
+            right = True
+            ball_init(right)

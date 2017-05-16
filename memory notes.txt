@@ -1,0 +1,35 @@
+if state == 0:
+        first_card = exposed[pos[0]//WIDTH] = True
+        state = 1
+    elif state == 1:
+        second_card = exposed[pos[0]//WIDTH] = True
+        state = 2
+    elif state == 2:
+        if first_card == second_card:
+            exposed[pos[0]//WIDTH] = True
+        elif first_card != second_card:
+             exposed[pos[0]//WIDTH] = False
+        state = 1
+
+
+
+
+if exposed[idx] == True:
+        if state == 0:
+            exposed[idx] == True
+            state = 1
+            first_card = idx
+            
+            
+        elif state == 1:
+            exposed[idx] == True
+            second_card = idx
+            state = 2
+        else:
+            if not card_list[first_card] == card_list[second_card]:
+                exposed[first_card] = False
+                exposed[second_card] = False
+            exposed[idx] = True
+            first_card = idx
+            state = 1
+   

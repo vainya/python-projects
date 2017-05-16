@@ -1,0 +1,43 @@
+There should be three global variables
+
+The secret number because it gets set when a new game starts and is used to check a user's guess
+The game range because it gets set when the user clicks a button and gets used when a new game starts
+The number of remaining guesses because it is set for every new game and is changed when a user makes a guess
+
+
+
+
+ How to use the math function to define a new game
+
+def new_game():
+
+    global num_guesses, secret_number
+
+    secret_number = random.randrange(....)
+    num_guesses = int(math.ceil(math.log(high-low+1,2)))
+
+above formula will define the number of guesses
+7 for range zero to 100
+10 for range zero to 1000 
+
+
+int(math.ceil(math.log(high+1,2)))
+the lower limit is aways zero
+
+
+import math
+import random
+
+range_100  = 100
+range_1000 = 1000
+
+print int(math.ceil(math.log(range_100,2)))
+print int(math.ceil(math.log(range_1000,2)))
+
+
+if number of guesses is equal to 0 print, you ran outta guesses
+if number of guesses is > 0 elif number of guesses == secret number
+
+if int (guess) == secret number then they guessed correctly 
+if int (guess) is < secret number then print higher
+if int (guess) is > secret number then print lower 
